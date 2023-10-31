@@ -25,9 +25,9 @@
       }
     },
     "Backend": {
-      "AspNet": true,
-      "AspNetCore": false,
-      "Java": false
+      "AspNet": false,
+      "AspNetCore": true,
+      "Java": true
     },
     "Docker": {
       "Dockerfile": true,
@@ -50,7 +50,7 @@
         "LiquibaseSql": true,
         "Security": true,
         "AdminUser": true,
-        "ConnectionString": null
+        "ConnectionString": "City"
       },
       "ClickHouse": {
         "DiffSql": false,
