@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISTest15home",
+  "modelName": "i-i-s-test15-home",
+  "className": "home",
+  "nameSpace": "IIS.Test15",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колвоПод",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "этаж",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "street",
+      "relatedTo": "i-i-s-test15-street",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "homeE",
+      "modelName": "i-i-s-test15-home",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колвоПод",
+          "caption": "Колво под",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "этаж",
+          "caption": "Этаж",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "имя",
+          "lookupValueField": "имя",
+          "relationName": "street",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "Имя",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Street",
+          "name": "street",
+          "relatedTo": "i-i-s-test15-street",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "homeL",
+      "modelName": "i-i-s-test15-home",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колвоПод",
+          "caption": "Колво под",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "этаж",
+          "caption": "Этаж",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "street",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "Имя",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Имя",
+          "name": "street",
+          "relatedTo": "i-i-s-test15-street",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

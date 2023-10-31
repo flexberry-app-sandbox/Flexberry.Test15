@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "city",
+      "projection": "cityL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Street",
+  "name": "IISTest15streetE",
+  "className": "streetE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test15-street",
+      "modelProjection": "streetE"
+    }
+  ]
+}

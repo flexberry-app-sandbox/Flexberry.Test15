@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISTest15street",
+  "modelName": "i-i-s-test15-street",
+  "className": "street",
+  "nameSpace": "IIS.Test15",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имя",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "city",
+      "relatedTo": "i-i-s-test15-city",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "streetE",
+      "modelName": "i-i-s-test15-street",
+      "attrs": [
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Город",
+          "lookupValueField": "город",
+          "relationName": "city",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "город",
+              "caption": "Город",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "City",
+          "name": "city",
+          "relatedTo": "i-i-s-test15-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "streetL",
+      "modelName": "i-i-s-test15-street",
+      "attrs": [
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "city",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "город",
+              "caption": "Город",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Город",
+          "name": "city",
+          "relatedTo": "i-i-s-test15-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

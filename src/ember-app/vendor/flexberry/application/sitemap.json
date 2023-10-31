@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Test15",
+  "applicationTitle": "Test15",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test15",
+      "caption": "Test15",
+      "title": "Test15",
+      "children": [
+        {
+          "link": "i-i-s-test15-street-l",
+          "menuName": null,
+          "caption": "Street",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test15-city-l",
+          "menuName": null,
+          "caption": "City",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test15-home-l",
+          "menuName": null,
+          "caption": "Home",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

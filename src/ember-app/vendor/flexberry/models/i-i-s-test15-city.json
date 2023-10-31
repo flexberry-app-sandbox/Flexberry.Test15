@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISTest15city",
+  "modelName": "i-i-s-test15-city",
+  "className": "city",
+  "nameSpace": "IIS.Test15",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "город",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "площадьГ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "cityE",
+      "modelName": "i-i-s-test15-city",
+      "attrs": [
+        {
+          "name": "город",
+          "caption": "Город",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "площадьГ",
+          "caption": "Площадь Г",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "cityL",
+      "modelName": "i-i-s-test15-city",
+      "attrs": [
+        {
+          "name": "город",
+          "caption": "Город",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "площадьГ",
+          "caption": "Площадь Г",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

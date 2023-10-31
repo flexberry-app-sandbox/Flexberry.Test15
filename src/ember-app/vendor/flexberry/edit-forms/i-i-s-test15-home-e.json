@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "street",
+      "projection": "streetL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Home",
+  "name": "IISTest15homeE",
+  "className": "homeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test15-home",
+      "modelProjection": "homeE"
+    }
+  ]
+}

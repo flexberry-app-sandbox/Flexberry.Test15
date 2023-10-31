@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "City",
+  "name": "IISTest15cityE",
+  "className": "cityE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test15-city",
+      "modelProjection": "cityE"
+    }
+  ]
+}
